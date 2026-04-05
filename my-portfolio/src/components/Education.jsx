@@ -1,9 +1,9 @@
 const educationData = [
   {
     emoji: "💻",
-    title: "WordPress Developer Course",
-    school: "Udemy — Become a WordPress Developer: Unlocking Power With Code",
-    year: "2025 - Present | In Progress",
+    title: "Diploma in Software developer",
+    school: "IIE Rosebank college",
+    year: "2023-2026",
   },
   {
     emoji: "🎓",
@@ -21,7 +21,8 @@ export default function Education() {
       </h1>
 
       <p className="qoute">
-        Education is not the learning of facts, but the training of the mind to think.
+        Education is not the learning of facts, but the training of the mind to
+        think.
       </p>
 
       <div className="box-container">

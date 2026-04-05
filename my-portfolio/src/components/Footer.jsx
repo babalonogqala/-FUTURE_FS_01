@@ -1,5 +1,12 @@
 export default function Footer() {
-  const quickLinks = ["home", "about", "skills", "education", "work", "experience"];
+  const quickLinks = [
+    "home",
+    "about",
+    "skills",
+    "education",
+    "work",
+    "experience",
+  ];
 
   const scrollTo = (e, id) => {
     e.preventDefault();
@@ -9,13 +16,13 @@ export default function Footer() {
   return (
     <section className="footer">
       <div className="box-container">
-
         <div className="box">
           <h3>Babalo's Portfolio</h3>
           <p>
-            Thank you for visiting my personal portfolio website. Connect with me
-            over socials.
-            <br /><br />
+            Thank you for visiting my personal portfolio website. Connect with
+            me over socials.
+            <br />
+            <br />
             Keep Rising 🚀
           </p>
         </div>
@@ -54,7 +61,6 @@ export default function Footer() {
             ></a>
           </div>
         </div>
-
       </div>
 
       <h1 className="credit">
