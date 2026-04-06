@@ -7,12 +7,16 @@ export default function About() {
 
       <div className="row">
         <div className="image">
-          <div className="about-avatar-large">B.N</div>
+          <img
+            className="about-avatar-large"
+            src="./images/pictures/babalo-image.jpeg"
+            alt=""
+          />
         </div>
 
         <div className="content">
           <h3>I'm Babalo</h3>
-          <span className="tag">WordPress Developer</span>
+          <span className="tag">web developer Developer</span>
 
           <p>
             I'm a WordPress developer based in Cape Town, South Africa. I build

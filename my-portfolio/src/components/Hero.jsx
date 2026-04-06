@@ -13,7 +13,7 @@ export default function Hero() {
   const [deleting, setDeleting] = useState(false);
 
   useEffect(() => {
-    const current = TYPING_STRINGS[index];
+    const current = TYPING_STRINGS[index] ?? "";
     let timeout;
 
     if (!deleting && displayed.length < current.length) {
@@ -24,7 +24,7 @@ export default function Hero() {
     } else if (!deleting && displayed.length === current.length) {
       timeout = setTimeout(() => setDeleting(true), 1800);
     } else if (deleting && displayed.length > 0) {
-      timeout = setTimeout(() => setDisplayed(displayed.slice(0, -1)), 40);
+      timeout = setTimeout(() => setDisplayed((prev) => prev.slice(0, -1)), 40);
     } else if (deleting && displayed.length === 0) {
       setDeleting(false);
       setIndex((i) => (i + 1) % TYPING_STRINGS.length);
@@ -32,6 +32,11 @@ export default function Hero() {
 
     return () => clearTimeout(timeout);
   }, [displayed, deleting, index]);
+
+  const scrollToAbout = (e) => {
+    e.preventDefault();
+    document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <section className="home" id="home">
@@ -42,21 +47,10 @@ export default function Hero() {
         </h2>
         <p>
           I am into <span className="typing-text">{displayed}</span>
-          <span style={{ borderRight: "2px solid #8a0808", animation: "none" }}>
-            |
-          </span>
+          <span style={{ borderRight: "2px solid #8a0808" }}>|</span>
         </p>
 
-        <a
-          href="#about"
-          className="hero-btn"
-          onClick={(e) => {
-            e.preventDefault();
-            document
-              .querySelector("#about")
-              .scrollIntoView({ behavior: "smooth" });
-          }}
-        >
+        <a href="#about" className="hero-btn" onClick={scrollToAbout}>
           <span>About Me</span>
           <i className="fas fa-arrow-circle-down"></i>
         </a>
@@ -67,7 +61,7 @@ export default function Hero() {
               <a
                 className="linkedin"
                 aria-label="LinkedIn"
-                href="https://linkedin.com/"
+                href="https://linkedin.com/in/your-profile"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -78,7 +72,7 @@ export default function Hero() {
               <a
                 className="github"
                 aria-label="GitHub"
-                href="https://github.com/"
+                href="https://github.com/your-username"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -90,7 +84,7 @@ export default function Hero() {
       </div>
 
       <div className="image">
-        <div className="hero-avatar">B.N</div>
+        {/* <div className="hero-avatar">B.N</div> */}
       </div>
     </section>
   );
