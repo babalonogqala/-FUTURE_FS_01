@@ -1,16 +1,42 @@
-# React + Vite
+# 🚀 My Projects Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my project repository! This README highlights my work and will continue to grow as I add more projects.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Project 1: Portfolio Website
 
-## React Compiler
+### 🔍 Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This is my personal portfolio website built to showcase my skills, projects, and contact information. It acts as a central platform where potential employers and collaborators can learn more about my work and experience.
 
-## Expanding the ESLint configuration
+### 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- HTML5
+- CSS3
+- JavaScript
+- React.js
+- Vite
+
+### ✨ Features
+
+- Fully responsive design (optimized for mobile, tablet, and desktop)
+- Clean and modern user interface
+- Dedicated contact section for easy communication
+- Smooth navigation and user-friendly experience
+
+### ⚙️ Setup & Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/babalonogqala/-FUTURE_FS_01.git
+```
+
+## Navigate into the project folder
+
+- cd your-repo-name
+- Install dependencies
+- npm install
+- Run the development server
+- npm run dev
