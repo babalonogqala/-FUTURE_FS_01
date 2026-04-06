@@ -6,9 +6,9 @@ const experiences = [
     side: "right",
   },
   {
-    company: "Personal Projects",
-    role: "Junior Web Developer",
-    period: "2023 - 2024",
+    company: "Future Interns",
+    role: " Full Stack Web Development Intern",
+    period: "2026",
     side: "left",
   },
 ];
