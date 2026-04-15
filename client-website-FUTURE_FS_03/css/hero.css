@@ -1,0 +1,120 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 12rem 6vw 8rem;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(10, 10, 10, 0.97) 0%,
+      rgba(10, 10, 10, 0.7) 60%,
+      rgba(10, 10, 10, 0.4) 100%
+    ),
+    url("https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1600&q=80")
+      center / cover no-repeat;
+}
+
+.hero-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 80px,
+    rgba(245, 200, 0, 0.02) 80px,
+    rgba(245, 200, 0, 0.02) 82px
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 780px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: rgba(245, 200, 0, 0.12);
+  border: 1px solid rgba(245, 200, 0, 0.3);
+  padding: 0.6rem 1.4rem;
+  border-radius: 20px;
+  font-family: var(--font-cond);
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--yellow);
+  margin-bottom: 2.4rem;
+  animation: fadeUp 0.6s 0.2s both;
+}
+
+.hero-title {
+  font-family: var(--font-head);
+  font-size: clamp(6rem, 10vw, 11rem);
+  line-height: 0.92;
+  letter-spacing: 2px;
+  margin-bottom: 2.4rem;
+  animation: fadeUp 0.6s 0.35s both;
+}
+.hero-title .accent {
+  color: var(--yellow);
+  display: block;
+}
+
+.hero-sub {
+  font-size: 1.8rem;
+  color: rgba(245, 245, 240, 0.7);
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 520px;
+  margin-bottom: 4rem;
+  animation: fadeUp 0.6s 0.5s both;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  flex-wrap: wrap;
+  animation: fadeUp 0.6s 0.65s both;
+}
+
+.hero-stats {
+  position: absolute;
+  bottom: 5rem;
+  right: 6vw;
+  display: flex;
+  gap: 4rem;
+  animation: fadeUp 0.6s 0.8s both;
+}
+
+.hero-stat-num {
+  font-family: var(--font-head);
+  font-size: 4.8rem;
+  color: var(--yellow);
+  line-height: 1;
+}
+
+.hero-stat-label {
+  font-family: var(--font-cond);
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-top: 0.4rem;
+}
+
+.hero-stat-divider {
+  width: 1px;
+  background: rgba(245, 245, 240, 0.1);
+  align-self: stretch;
+}
