@@ -1,6 +1,6 @@
 ﻿# 🚀 My Projects
 
-Welcome to my project repository! This README highlights my work and will continue to grow as I add more projects.
+Welcome to my project repository! This README highlights my work.
 
 ---
 
