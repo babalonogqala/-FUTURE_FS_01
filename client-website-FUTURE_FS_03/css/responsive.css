@@ -1,0 +1,67 @@
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(10, 10, 10, 0.98);
+    padding: 2rem;
+    gap: 1.6rem;
+    border-bottom: 2px solid var(--yellow);
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .nav-hamburger {
+    display: block;
+  }
+
+  .hero-stats {
+    display: none;
+  }
+
+  .services-intro {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+  .why-image-wrap {
+    display: none;
+  }
+
+  .routes-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .contact-details {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 55%;
+  }
+  .routes-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

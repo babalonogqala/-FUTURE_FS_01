@@ -1,0 +1,79 @@
+#routes {
+  background: var(--dark);
+}
+
+.routes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
+  margin-top: 6rem;
+}
+
+.route-card {
+  background: var(--dark2);
+  border: 1px solid rgba(245, 245, 240, 0.06);
+  border-radius: 4px;
+  padding: 2.8rem 2.4rem;
+  transition: all 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+
+.route-card::after {
+  content: attr(data-num);
+  position: absolute;
+  right: -1rem;
+  bottom: -1rem;
+  font-family: var(--font-head);
+  font-size: 8rem;
+  color: rgba(245, 200, 0, 0.04);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.route-card:hover {
+  border-color: var(--yellow);
+  transform: translateY(-3px);
+}
+
+.route-from {
+  font-family: var(--font-cond);
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-bottom: 0.6rem;
+}
+
+.route-name {
+  font-family: var(--font-cond);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.route-arrow {
+  color: var(--yellow);
+  margin: 1rem 0;
+  font-size: 1.4rem;
+}
+
+.route-to {
+  font-size: 1.4rem;
+  color: rgba(245, 245, 240, 0.6);
+}
+
+.route-fare {
+  margin-top: 1.6rem;
+  font-family: var(--font-head);
+  font-size: 2.4rem;
+  color: var(--yellow);
+}
+
+.route-fare-label {
+  font-family: var(--font-cond);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--grey);
+}

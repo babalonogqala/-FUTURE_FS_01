@@ -1,0 +1,98 @@
+#why {
+  background: var(--black);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+  align-items: center;
+}
+
+.why-image-wrap {
+  position: relative;
+}
+
+.why-image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.why-image-accent {
+  position: absolute;
+  bottom: -2rem;
+  right: -2rem;
+  width: 60%;
+  aspect-ratio: 1;
+  background: var(--yellow);
+  border-radius: 4px;
+  z-index: -1;
+}
+
+.why-image-badge {
+  position: absolute;
+  top: 3rem;
+  left: -3rem;
+  background: var(--yellow);
+  color: var(--black);
+  padding: 1.6rem 2rem;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.why-badge-num {
+  font-family: var(--font-head);
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.why-badge-text {
+  font-family: var(--font-cond);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.why-points {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.why-point {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.why-point-icon {
+  width: 4.4rem;
+  height: 4.4rem;
+  flex-shrink: 0;
+  background: rgba(245, 200, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--yellow);
+}
+
+.why-point-title {
+  font-family: var(--font-cond);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.why-point-desc {
+  font-size: 1.4rem;
+  color: rgba(245, 245, 240, 0.55);
+  line-height: 1.6;
+  font-weight: 300;
+}
