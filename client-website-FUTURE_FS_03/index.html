@@ -1,217 +1,256 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Sizwe Express Taxi – Safe, reliable, affordable taxi services across Cape Town and surrounding areas. Book your ride on WhatsApp today." />
-  <meta name="keywords" content="taxi cape town, minibus taxi, airport transfer, cape town transport, sizwe express" />
-  <title>Sizwe Express Taxi | Cape Town</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sizwe Express Taxi – Safe, reliable, affordable taxi services across Cape Town and surrounding areas. Book your ride on WhatsApp today."
+    />
+    <meta
+      name="keywords"
+      content="taxi cape town, minibus taxi, airport transfer, cape town transport, sizwe express"
+    />
+    <title>Sizwe Express Taxi | Cape Town</title>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-  <!-- CSS Files -->
-  <link rel="stylesheet" href="src/css/reset.css" />
-  <link rel="stylesheet" href="src/css/variables.css" />
-  <link rel="stylesheet" href="src/css/navbar.css" />
-  <link rel="stylesheet" href="src/css/hero.css" />
-  <link rel="stylesheet" href="src/css/marquee.css" />
-  <link rel="stylesheet" href="src/css/services.css" />
-  <link rel="stylesheet" href="src/css/why.css" />
-  <link rel="stylesheet" href="src/css/routes.css" />
-  <link rel="stylesheet" href="src/css/reviews.css" />
-  <link rel="stylesheet" href="src/css/contact.css" />
-  <link rel="stylesheet" href="src/css/footer.css" />
-  <link rel="stylesheet" href="src/css/animations.css" />
-  <link rel="stylesheet" href="src/css/responsive.css" />
-</head>
-<body>
-
-  <!-- NAVBAR -->
-  <nav id="navbar">
-    <a href="#home" class="nav-logo">
-      <div class="nav-logo-icon"><i class="fas fa-taxi"></i></div>
-      <div>
-        <div class="nav-logo-text">Sizwe <span>Express</span></div>
-        <div class="nav-logo-sub">Taxi Services</div>
-      </div>
-    </a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#why">Why Us</a></li>
-      <li><a href="#routes">Routes</a></li>
-      <li><a href="#reviews">Reviews</a></li>
-      <li><a href="#contact" class="nav-cta">Book on WhatsApp</a></li>
-    </ul>
-    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
-      <i class="fas fa-bars"></i>
-    </button>
-  </nav>
-
-  <!-- HERO -->
-  <section id="home" class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <i class="fas fa-map-marker-alt"></i>
-        Cape Town & Surrounding Areas
-      </div>
-      <h1 class="hero-title">
-        Your Ride,
-        <span class="accent">On Time.</span>
-        Every Time.
-      </h1>
-      <p class="hero-sub">
-        Safe, affordable and reliable taxi services across Cape Town — from Khayelitsha to the CBD, Mitchell's Plain to the Airport. We move Mzansi.
-      </p>
-      <div class="hero-actions">
-        <a href="https://wa.me/27781234567?text=Hi%20Sizwe%20Express!%20I%20want%20to%20book%20a%20ride." target="_blank" class="btn-primary">
-          <i class="fab fa-whatsapp"></i> Book on WhatsApp
-        </a>
-      </div>
-    </div>
-    <div class="hero-stats" id="heroStats"></div>
-  </section>
-
-  <!-- MARQUEE -->
-  <div class="marquee-wrap">
-    <div class="marquee-track" id="marqueeTrack"></div>
-  </div>
-
-  <!-- SERVICES -->
-  <section id="services">
-    <div class="services-intro">
-      <div>
-        <div class="section-label">What We Offer</div>
-        <h2 class="section-title">Transport <span class="accent">Solutions</span> For Everyone</h2>
-      </div>
-      <p class="services-desc">
-        Whether you need a daily commute, an airport pickup or a private charter — we have a service that fits your budget and schedule.
-      </p>
-    </div>
-    <div class="services-grid" id="servicesGrid"></div>
-  </section>
-
-  <!-- WHY US -->
-  <section id="why">
-    <div class="why-grid">
-      <div class="why-image-wrap fade-up">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Minibus_Taxi_South_Africa.jpg/640px-Minibus_Taxi_South_Africa.jpg"
-          alt="South African minibus taxi"
-          class="why-image"
-          onerror="this.src='https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&q=80'"
-        />
-        <div class="why-image-accent"></div>
-        <div class="why-image-badge">
-          <div class="why-badge-num">12+</div>
-          <div class="why-badge-text">Years of Service</div>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/variables.css" />
+    <link rel="stylesheet" href="src/css/navbar.css" />
+    <link rel="stylesheet" href="src/css/hero.css" />
+    <link rel="stylesheet" href="src/css/marquee.css" />
+    <link rel="stylesheet" href="src/css/services.css" />
+    <link rel="stylesheet" href="src/css/why.css" />
+    <link rel="stylesheet" href="src/css/routes.css" />
+    <link rel="stylesheet" href="src/css/reviews.css" />
+    <link rel="stylesheet" href="src/css/contact.css" />
+    <link rel="stylesheet" href="src/css/footer.css" />
+    <link rel="stylesheet" href="src/css/animations.css" />
+    <link rel="stylesheet" href="src/css/responsive.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <a href="#home" class="nav-logo">
+        <div class="nav-logo-icon"><i class="fas fa-taxi"></i></div>
+        <div>
+          <div class="nav-logo-text">Sizwe <span>Express</span></div>
+          <div class="nav-logo-sub">Taxi Services</div>
         </div>
-      </div>
-      <div class="fade-up">
-        <div class="section-label">Why Choose Us</div>
-        <h2 class="section-title">We Don't Just Drive — <span class="accent">We Deliver</span></h2>
-        <div class="why-points" id="whyPoints"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ROUTES -->
-  <section id="routes">
-    <div class="section-label">Popular Routes</div>
-    <h2 class="section-title">We Cover <span class="accent">All of Cape Town</span></h2>
-    <div class="routes-grid" id="routesGrid"></div>
-  </section>
-
-  <!-- REVIEWS -->
-  <section id="reviews">
-    <div class="section-label">Passenger Reviews</div>
-    <h2 class="section-title">What Our <span class="accent">Passengers Say</span></h2>
-    <div class="reviews-grid" id="reviewsGrid"></div>
-  </section>
-
-  <!-- CONTACT / WHATSAPP CTA -->
-  <section id="contact" class="contact-section">
-    <div class="contact-inner">
-      <div class="section-label">Ready to Roll?</div>
-      <h2 class="contact-title">Book Your Ride <span class="accent">Right Now</span></h2>
-      <p class="contact-desc">
-        We respond within minutes on WhatsApp. Operating daily from 5:00 AM to 10:00 PM.
-      </p>
-      <div class="contact-details" id="contactDetails"></div>
-      <a
-        href="https://wa.me/27781234567?text=Hi%20Sizwe%20Express!%20I%20want%20to%20book%20a%20ride."
-        target="_blank"
-        class="whatsapp-cta-btn"
-      >
-        <i class="fab fa-whatsapp"></i> Chat With Us on WhatsApp
       </a>
-    </div>
-  </section>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#routes">Routes</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact" class="nav-cta">Book on WhatsApp</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="#home" class="nav-logo">
-          <div class="nav-logo-icon"><i class="fas fa-taxi"></i></div>
-          <div>
-            <div class="nav-logo-text">Sizwe <span>Express</span></div>
-            <div class="nav-logo-sub">Taxi Services</div>
-          </div>
-        </a>
-        <p>Safe, reliable and affordable taxi services across Cape Town and surrounding areas. Proudly serving our community since 2012.</p>
-        <div class="footer-socials">
-          <a href="https://wa.me/27781234567" class="footer-social" target="_blank" aria-label="WhatsApp">
-            <i class="fab fa-whatsapp"></i>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-map-marker-alt"></i>
+          Cape Town & Surrounding Areas
+        </div>
+        <h1 class="hero-title">
+          Your Ride,
+          <span class="accent">On Time.</span>
+          Every Time.
+        </h1>
+        <p class="hero-sub">
+          Safe, affordable and reliable taxi services across Cape Town — from
+          Khayelitsha to the CBD, Mitchell's Plain to the Airport. We move
+          Mzansi.
+        </p>
+        <div class="hero-actions">
+          <a
+            href="https://wa.me/27781234567?text=Hi%20Sizwe%20Express!%20I%20want%20to%20book%20a%20ride."
+            target="_blank"
+            class="btn-primary"
+          >
+            <i class="fab fa-whatsapp"></i> Book on WhatsApp
           </a>
         </div>
       </div>
-      <div>
-        <div class="footer-col-title">Quick Links</div>
-        <div class="footer-links" id="footerLinks"></div>
-      </div>
-      <div>
-        <div class="footer-col-title">Our Services</div>
-        <div class="footer-links" id="footerServices"></div>
-      </div>
-      <div>
-        <div class="footer-col-title">Contact Us</div>
-        <div class="footer-contact" id="footerContact"></div>
-      </div>
+      <div class="hero-stats" id="heroStats"></div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-wrap">
+      <div class="marquee-track" id="marqueeTrack"></div>
     </div>
-    <div class="footer-bottom">
-      <div>© 2025 <span>Sizwe Express Taxi</span>. All rights reserved.</div>
-    </div>
-  </footer>
 
-  <!-- FLOATING WHATSAPP -->
-  <a
-    href="https://wa.me/27781234567?text=Hi%20Sizwe%20Express!%20I%20want%20to%20book%20a%20ride."
-    class="whatsapp-float"
-    target="_blank"
-    aria-label="WhatsApp"
-  >
-    <i class="fab fa-whatsapp"></i>
-  </a>
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="services-intro">
+        <div>
+          <div class="section-label">What We Offer</div>
+          <h2 class="section-title">
+            Transport <span class="accent">Solutions</span> For Everyone
+          </h2>
+        </div>
+        <p class="services-desc">
+          Whether you need a daily commute, an airport pickup or a private
+          charter — we have a service that fits your budget and schedule.
+        </p>
+      </div>
+      <div class="services-grid" id="servicesGrid"></div>
+    </section>
 
-  <!-- SCROLL TOP -->
-  <button class="scroll-top" id="scrollTop" aria-label="Back to top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
+    <!-- WHY US -->
+    <section id="why">
+      <div class="why-grid">
+        <div class="why-image-wrap fade-up">
+          <img
+            src="./src/image/taxis.jpg"
+            alt="South African minibus taxi"
+            class="why-image"
+            onerror="
+              this.src =
+                'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&q=80'
+            "
+          />
+          <div class="why-image-accent"></div>
+          <div class="why-image-badge">
+            <div class="why-badge-num">12+</div>
+            <div class="why-badge-text">Years of Service</div>
+          </div>
+        </div>
+        <div class="fade-up">
+          <div class="section-label">Why Choose Us</div>
+          <h2 class="section-title">
+            We Don't Just Drive — <span class="accent">We Deliver</span>
+          </h2>
+          <div class="why-points" id="whyPoints"></div>
+        </div>
+      </div>
+    </section>
 
-  <!-- JS Files -->
-  <script src="src/js/data.js"></script>
-  <script src="src/js/navbar.js"></script>
-  <script src="src/js/marquee.js"></script>
-  <script src="src/js/render.js"></script>
-  <script src="src/js/animations.js"></script>
-  <script src="src/js/main.js"></script>
+    <!-- ROUTES -->
+    <section id="routes">
+      <div class="section-label">Popular Routes</div>
+      <h2 class="section-title">
+        We Cover <span class="accent">All of Cape Town</span>
+      </h2>
+      <div class="routes-grid" id="routesGrid"></div>
+    </section>
 
-</body>
+    <!-- REVIEWS -->
+    <section id="reviews">
+      <div class="section-label">Passenger Reviews</div>
+      <h2 class="section-title">
+        What Our <span class="accent">Passengers Say</span>
+      </h2>
+      <div class="reviews-grid" id="reviewsGrid"></div>
+    </section>
+
+    <!-- CONTACT / WHATSAPP CTA -->
+    <section id="contact" class="contact-section">
+      <div class="contact-inner">
+        <div class="section-label">Ready to Roll?</div>
+        <h2 class="contact-title">
+          Book Your Ride <span class="accent">Right Now</span>
+        </h2>
+        <p class="contact-desc">
+          We respond within minutes on WhatsApp. Operating daily from 5:00 AM to
+          10:00 PM.
+        </p>
+        <div class="contact-details" id="contactDetails"></div>
+        <a
+          href="https://wa.me/27781234567?text=Hi%20Sizwe%20Express!%20I%20want%20to%20book%20a%20ride."
+          target="_blank"
+          class="whatsapp-cta-btn"
+        >
+          <i class="fab fa-whatsapp"></i> Chat With Us on WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <div class="nav-logo-icon"><i class="fas fa-taxi"></i></div>
+            <div>
+              <div class="nav-logo-text">Sizwe <span>Express</span></div>
+              <div class="nav-logo-sub">Taxi Services</div>
+            </div>
+          </a>
+          <p>
+            Safe, reliable and affordable taxi services across Cape Town and
+            surrounding areas. Proudly serving our community since 2012.
+          </p>
+          <div class="footer-socials">
+            <a
+              href="https://wa.me/27781234567"
+              class="footer-social"
+              target="_blank"
+              aria-label="WhatsApp"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Quick Links</div>
+          <div class="footer-links" id="footerLinks"></div>
+        </div>
+        <div>
+          <div class="footer-col-title">Our Services</div>
+          <div class="footer-links" id="footerServices"></div>
+        </div>
+        <div>
+          <div class="footer-col-title">Contact Us</div>
+          <div class="footer-contact" id="footerContact"></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2025 <span>Sizwe Express Taxi</span>. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP -->
+    <a
+      href="https://wa.me/27781234567?text=Hi%20Sizwe%20Express!%20I%20want%20to%20book%20a%20ride."
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- SCROLL TOP -->
+    <button class="scroll-top" id="scrollTop" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JS Files -->
+    <script src="src/js/data.js"></script>
+    <script src="src/js/navbar.js"></script>
+    <script src="src/js/marquee.js"></script>
+    <script src="src/js/render.js"></script>
+    <script src="src/js/animations.js"></script>
+    <script src="src/js/main.js"></script>
+  </body>
 </html>
