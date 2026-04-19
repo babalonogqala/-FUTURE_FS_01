@@ -41,9 +41,7 @@ footer {
   color: rgba(245, 245, 240, 0.5);
   transition: color 0.15s;
 }
-.footer-links a:hover {
-  color: var(--white);
-}
+.footer-links a:hover { color: var(--white); }
 
 .footer-contact-item {
   display: flex;
@@ -80,8 +78,8 @@ footer {
   transition: all 0.15s;
 }
 .footer-social:hover {
-  background: #25d366;
-  border-color: #25d366;
+  background: #25D366;
+  border-color: #25D366;
   color: #fff;
 }
 
@@ -95,6 +93,4 @@ footer {
   color: rgba(245, 245, 240, 0.3);
   text-align: center;
 }
-.footer-bottom span {
-  color: var(--yellow);
-}
+.footer-bottom span { color: var(--yellow); }

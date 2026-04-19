@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -19,31 +17,15 @@ body {
   overflow-x: hidden;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-img {
-  max-width: 100%;
-  display: block;
-}
-ul {
-  list-style: none;
-}
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+ul { list-style: none; }
 
-::-webkit-scrollbar {
-  width: 4px;
-}
-::-webkit-scrollbar-track {
-  background: var(--dark);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--yellow);
-}
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--dark); }
+::-webkit-scrollbar-thumb { background: var(--yellow); }
 
-section {
-  padding: 10rem 6vw;
-}
+section { padding: 10rem 6vw; }
 
 .section-label {
   font-family: var(--font-cond);
@@ -57,7 +39,7 @@ section {
   gap: 1rem;
 }
 .section-label::before {
-  content: "";
+  content: '';
   display: block;
   width: 3rem;
   height: 2px;
@@ -71,9 +53,7 @@ section {
   letter-spacing: 1px;
   margin-bottom: 2rem;
 }
-.section-title .accent {
-  color: var(--yellow);
-}
+.section-title .accent { color: var(--yellow); }
 
 .btn-primary {
   display: inline-flex;

@@ -1,6 +1,4 @@
-#why {
-  background: var(--black);
-}
+#why { background: var(--black); }
 
 .why-grid {
   display: grid;
@@ -9,9 +7,7 @@
   align-items: center;
 }
 
-.why-image-wrap {
-  position: relative;
-}
+.why-image-wrap { position: relative; }
 
 .why-image {
   width: 100%;

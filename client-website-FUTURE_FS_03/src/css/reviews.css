@@ -1,6 +1,4 @@
-#reviews {
-  background: var(--black);
-}
+#reviews { background: var(--black); }
 
 .reviews-grid {
   display: grid;

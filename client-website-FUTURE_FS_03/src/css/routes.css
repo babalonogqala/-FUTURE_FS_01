@@ -1,6 +1,4 @@
-#routes {
-  background: var(--dark);
-}
+#routes { background: var(--dark); }
 
 .routes-grid {
   display: grid;

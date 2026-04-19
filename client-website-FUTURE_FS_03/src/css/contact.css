@@ -25,9 +25,7 @@
   letter-spacing: 1px;
   margin-bottom: 2rem;
 }
-.contact-title .accent {
-  color: var(--dark);
-}
+.contact-title .accent { color: var(--dark); }
 
 .contact-desc {
   font-size: 1.7rem;
@@ -70,7 +68,7 @@
   display: inline-flex;
   align-items: center;
   gap: 1.2rem;
-  background: #25d366;
+  background: #25D366;
   color: #fff;
   padding: 1.8rem 4rem;
   border-radius: 4px;
@@ -83,9 +81,7 @@
   box-shadow: 0 8px 30px rgba(37, 211, 102, 0.35);
 }
 
-.whatsapp-cta-btn i {
-  font-size: 2.4rem;
-}
+.whatsapp-cta-btn i { font-size: 2.4rem; }
 
 .whatsapp-cta-btn:hover {
   background: #1ebe5d;
@@ -100,7 +96,7 @@
   right: 3rem;
   width: 5.6rem;
   height: 5.6rem;
-  background: #25d366;
+  background: #25D366;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -112,9 +108,7 @@
   animation: pulseGreen 2s infinite;
   transition: transform 0.2s;
 }
-.whatsapp-float:hover {
-  transform: scale(1.1);
-}
+.whatsapp-float:hover { transform: scale(1.1); }
 
 /* Scroll top */
 .scroll-top {
@@ -135,10 +129,5 @@
   transition: all 0.2s;
   z-index: 999;
 }
-.scroll-top.visible {
-  display: flex;
-}
-.scroll-top:hover {
-  background: var(--yellow2);
-  transform: translateY(-2px);
-}
+.scroll-top.visible { display: flex; }
+.scroll-top:hover { background: var(--yellow2); transform: translateY(-2px); }

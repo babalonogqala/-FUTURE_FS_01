@@ -1,8 +1,6 @@
 nav {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0; left: 0; right: 0;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -42,9 +40,7 @@ nav.scrolled {
   letter-spacing: 1px;
   line-height: 1;
 }
-.nav-logo-text span {
-  color: var(--yellow);
-}
+.nav-logo-text span { color: var(--yellow); }
 
 .nav-logo-sub {
   font-family: var(--font-cond);
@@ -73,23 +69,17 @@ nav.scrolled {
 }
 
 .nav-links a::after {
-  content: "";
+  content: '';
   position: absolute;
-  bottom: -4px;
-  left: 0;
-  right: 0;
+  bottom: -4px; left: 0; right: 0;
   height: 2px;
   background: var(--yellow);
   transform: scaleX(0);
   transition: transform 0.2s;
 }
 
-.nav-links a:hover {
-  color: var(--white);
-}
-.nav-links a:hover::after {
-  transform: scaleX(1);
-}
+.nav-links a:hover { color: var(--white); }
+.nav-links a:hover::after { transform: scaleX(1); }
 
 .nav-cta {
   background: var(--yellow) !important;
@@ -102,9 +92,7 @@ nav.scrolled {
   background: var(--yellow2) !important;
   transform: translateY(-1px);
 }
-.nav-cta::after {
-  display: none !important;
-}
+.nav-cta::after { display: none !important; }
 
 .nav-hamburger {
   display: none;

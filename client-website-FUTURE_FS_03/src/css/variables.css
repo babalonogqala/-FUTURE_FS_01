@@ -1,0 +1,14 @@
+:root {
+  --black:     #0a0a0a;
+  --dark:      #111111;
+  --dark2:     #1a1a1a;
+  --yellow:    #f5c800;
+  --yellow2:   #e6b800;
+  --white:     #f5f5f0;
+  --grey:      #888;
+  --light:     #f0ede8;
+
+  --font-head: 'Bebas Neue', sans-serif;
+  --font-cond: 'Barlow Condensed', sans-serif;
+  --font-body: 'Barlow', sans-serif;
+}
